@@ -1,87 +1,124 @@
-:root {
-    --light-grey: #f5f6f7;
-    --dark-blue: #0a0a23;
-    --fcc-blue: #1b1b32;
-    --light-yellow: #fecc4c;
-    --dark-yellow: #feac32;
-    --light-pink: #ffadad;
-    --dark-red: #850000;
-    --light-green: #acd157;
-  }
-  
-  body {
+body {
     font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    background-color: var(--fcc-blue);
-    color: var(--light-grey);
-  }
-  
-  h1 {
+    font-size: 1.25rem;
+    background-color: white;
+}
+
+h1 {
     text-align: center;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 680px;
-  }
-  
-  h1,
-  .container,
-  .output {
+    color: rgba(225, 0, 0, 0.772); 
+}
+
+.container {
+    width: 100%;
+    max-width: 55rem; 
+    background-color: rgba(225, 0, 0, 0.772);
+    padding: 2rem 2rem 2rem 2rem; 
+    border-radius: 2rem; 
+}
+
+h1,
+.container,
+.output {
     margin: 20px auto;
-  }
-  
-  label,
-  legend {
+}
+
+label,
+h4 {
     font-weight: bold;
-  }
-  
-  .input-container {
+    color: rgba(0, 0, 0, 0.708); 
+}
+
+#budget {
+    margin-left: 3rem; 
+    font-size: 1rem; 
+}
+
+.meal-type-container {
+    display: flex; 
+    margin: 2rem auto; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  button {
+    padding-top: 1rem; 
+}
+
+button {
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--light-yellow);
-    border: 2px solid var(--dark-yellow);
-  }
-  
-  button,
-  input,
-  select {
-    min-height: 24px;
-    color: var(--dark-blue);
-  }
-  
-  fieldset,
-  label,
-  button,
-  input,
-  select {
-    margin-bottom: 10px;
-  }
-  
-  .output {
-    border: 2px solid var(--light-grey);
-    padding: 10px;
+    color: rgba(0, 0, 0, 0.708); 
+    background-color:lightgrey;
+    padding: 0.4rem 1rem 0.4rem 1rem; 
+    border: none; 
+    border-radius: 2rem; 
+    font-weight: 600; 
+    height: 2rem; 
+}
+
+input {
+    border-radius: 1rem; 
+    border: none; 
+    padding-left: 0.6rem; 
+    font-size: 1rem; 
+    margin-bottom: 0.6rem;
+}
+
+fieldset {
+    background-color: lightgrey;
+    border: none; 
+    border-radius: 1rem; 
+    margin-right: 1.5rem; 
+    min-height: 0.7rem; 
+    width: 80%; 
+}
+
+.buttons-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+} 
+
+.controls {
+    display: flex; 
+    align-items: center;
+    margin: 1rem auto; 
+}
+
+.dropdown-container {
+    padding: 0.8rem 1.5rem 1rem 1.5rem;
+}
+
+select {
+    border: none; 
+    height: 1.3rem; 
+    border-radius: 1rem;
+    box-shadow: none;
+}
+
+.output {
+    border: none;
+    padding: 2rem;
     text-align: center;
-  }
-  
-  .hide {
+}
+
+.hide {
     display: none;
-  }
-  
-  .output span {
+}
+
+.output span {
     font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .surplus {
-    color: var(--light-pink);
-  }
-  
-  .deficit {
-    color: var(--light-green);
-  }
+    font-size: 1.2rem;
+}
+
+.surplus {
+    color: green;
+}
+
+.deficit {
+    color: rgb(255, 157, 0);
+}
